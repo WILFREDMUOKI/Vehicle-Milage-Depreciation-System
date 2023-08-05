@@ -1,0 +1,12 @@
+"name": "dfinity_project",
+"main": "index.js",
+"dependencies": {
+  "azle": "0.16.2",
+  "uuid": "^9.0.0"
+},
+"engines": {
+  "node": "^12 || ^14 || ^16 || ^18"
+},
+"devDependencies": {
+  "@types/uuid": "^9.0.1"
+}
