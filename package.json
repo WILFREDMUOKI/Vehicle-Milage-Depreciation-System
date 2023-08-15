@@ -1,4 +1,4 @@
-"name": "dfinity_project",
+{"name": "dfinity_project",
 "main": "index.js",
 "dependencies": {
   "azle": "0.16.2",
@@ -9,4 +9,5 @@
 },
 "devDependencies": {
   "@types/uuid": "^9.0.1"
+}
 }
