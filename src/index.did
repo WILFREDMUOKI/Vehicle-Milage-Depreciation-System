@@ -1,0 +1,23 @@
+type DepreciationPayload = record { depreciation : nat64 };
+type MileagePayload = record { miles : nat64 };
+type Vehicle = record {
+  id : text;
+  model : text;
+  mileage : nat64;
+  createdAt : nat64;
+  depreciation : nat64;
+  version : text;
+};
+type VehiclePayload = record {
+  model : text;
+  mileage : nat64;
+  depreciation : nat64;
+  version : text;
+};
+type _AzleResult = variant { Ok : Vehicle; Err : text };
+service : () -> {
+  addMileage : (text, MileagePayload) -> (_AzleResult);
+  createVehicle : (VehiclePayload) -> (_AzleResult);
+  getVehicle : (text) -> (_AzleResult) query;
+  updateDepreciation : (text, DepreciationPayload) -> (_AzleResult);
+}
